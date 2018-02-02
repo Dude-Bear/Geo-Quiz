@@ -1,0 +1,32 @@
+<resources>
+    <!--For XML-->
+
+    <!--app name-->
+    <string name="app_name">Geo Quiz</string>
+
+    <!--heading-->
+    <string name="welcome_to_the_geo_quiz">Welcome to the Geo Quiz</string>
+
+    <!--questions and answers-->
+    <string name="highest_mountain">What is the highest mountain in the world?</string>
+    <string name="how_many_megacities">How many megacities are there in the world?</string>
+    <string name="explanation_megacities">(A megacity is usually defined as a metropolitan area with a total population in excess of ten million people)</string>
+    <string name="aswan_located">On which river is Aswan located?</string>
+    <string name="kongo">Kongo</string>
+    <string name="nil">Nil</string>
+    <string name="kasai">Kasai</string>
+    <string name="sambesi">Sambesi</string>
+    <string name="cities_in_germany">Which of these cities are in Germany?</string>
+    <string name="berlin">Berlin</string>
+    <string name="k_ln">Köln</string>
+    <string name="rotterdam">Rotterdam</string>
+    <string name="liverpool">Liverpool</string>
+    <string name="mountain_in_the_alps">What is the highest mountain in the Alps?</string>
+    <string name="mont_blanc">Mont Blanc</string>
+    <string name="matterhorn">Matterhorn</string>
+    <string name="zugspitze">Zugspitze</string>
+    <string name="gro_glockner">Großglockner</string>
+
+    <!--answer button-->
+    <string name="button_submit_answers">What\'s my score?</string>
+</resources>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/park_in_canada_hell"
+    tools:context="com.example.android.geoquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_the_geo_quiz"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:text="@string/highest_mountain"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/highest_mountain_world"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:text="@string/how_many_megacities"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/explanation_megacities" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/megacities_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonMegacities"
+                android:paddingEnd="24dp"
+                android:paddingRight="24dp"
+                android:text="24" />
+
+            <RadioButton
+                android:id="@+id/megacities_38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonMegacities"
+                android:paddingEnd="24dp"
+                android:paddingRight="24dp"
+                android:text="38" />
+
+            <RadioButton
+                android:id="@+id/megacities_47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonMegacities"
+                android:paddingEnd="24dp"
+                android:paddingRight="24dp"
+                android:text="47" />
+
+            <RadioButton
+                android:id="@+id/megacities_57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonMegacities"
+                android:paddingEnd="24dp"
+                android:paddingRight="24dp"
+                android:text="57" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:text="@string/aswan_located"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/aswan_located_kongo"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonAswanLocated"
+                android:paddingRight="24dp"
+                android:text="@string/kongo" />
+
+            <RadioButton
+                android:id="@+id/aswan_located_nil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonAswanLocated"
+                android:paddingRight="24dp"
+                android:text="@string/nil" />
+
+            <RadioButton
+                android:id="@+id/aswan_located_kasai"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonAswanLocated"
+                android:paddingRight="24dp"
+                android:text="@string/kasai" />
+
+            <RadioButton
+                android:id="@+id/aswan_located_sambesi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonAswanLocated"
+                android:text="@string/sambesi" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:text="@string/cities_in_germany"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cities_germany_berlin"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="24dp"
+                android:text="@string/berlin" />
+
+            <CheckBox
+                android:id="@+id/cities_germany_köln"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="24dp"
+                android:text="@string/k_ln" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cities_germany_rotterdam"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:paddingRight="24dp"
+                android:text="@string/rotterdam" />
+
+            <CheckBox
+                android:id="@+id/cities_germany_liverpool"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/liverpool" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="24dp"
+            android:text="@string/mountain_in_the_alps"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/highest_mountain_alp_mont_blanc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonsHighestMountainAlp"
+                android:paddingRight="24dp"
+                android:text="@string/mont_blanc" />
+
+            <RadioButton
+                android:id="@+id/highest_mountain_alp_Matterhorn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonsHighestMountainAlp"
+                android:paddingRight="24dp"
+                android:text="@string/matterhorn" />
+
+            <RadioButton
+                android:id="@+id/highest_mountain_alp_Zugspitze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonsHighestMountainAlp"
+                android:paddingRight="24dp"
+                android:text="@string/zugspitze" />
+
+            <RadioButton
+                android:id="@+id/highest_mountain_alp_Großglockner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="radioButtonsHighestMountainAlp"
+                android:text="@string/gro_glockner" />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/submit_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:onClick="displayScore"
+            android:text="@string/button_submit_answers" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
