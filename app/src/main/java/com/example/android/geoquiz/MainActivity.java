@@ -3,9 +3,11 @@ package com.example.android.geoquiz;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -16,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
@@ -163,5 +166,38 @@ public class MainActivity extends AppCompatActivity {
         return pointsCheckBoxes;
     }
 
+    //This Method is called when the reset Button is clicked
+    public void resetQuiz(View view) {
+
+        //resets the radiogroups
+        RadioGroup radioGroupMegacities = (RadioGroup) findViewById(R.id.radio_Group_Megacities);
+        radioGroupMegacities.clearCheck();
+        RadioGroup radioGroupAswan = (RadioGroup) findViewById(R.id.radio_group_Aswan);
+        radioGroupAswan.clearCheck();
+        RadioGroup radioGroupMountainAlp = (RadioGroup) findViewById(R.id.radio_group_mountain_alp);
+        radioGroupMountainAlp.clearCheck();
+
+        //resets the check boxes
+        CheckBox citiesGermanyBerlin = (CheckBox) findViewById(R.id.cities_germany_berlin);
+        citiesGermanyBerlin.setChecked(false);
+        CheckBox citiesGermanyRotterdam = (CheckBox) findViewById(R.id.cities_germany_rotterdam);
+        citiesGermanyRotterdam.setChecked(false);
+        CheckBox citiesGermanyLiverpool = (CheckBox) findViewById(R.id.cities_germany_liverpool);
+        citiesGermanyLiverpool.setChecked(false);
+        CheckBox citiesGermanykoeln = (CheckBox) findViewById(R.id.cities_germany_köln);
+        citiesGermanykoeln.setChecked(false);
+
+        //resets the text input
+        EditText userAnswerHighestMountain = (EditText) findViewById(R.id.highest_mountain_world);
+        userAnswerHighestMountain.setText("");
+
+        //resets the points
+       score= 0;
+       pointsAswanLocated = 0;
+       pointsMountainAlp = 0;
+       pointsMegacities = 0;
+       pointsEditTextHighestMountain = 0;
+
+    }
 }
 

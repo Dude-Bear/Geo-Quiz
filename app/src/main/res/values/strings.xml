@@ -29,4 +29,5 @@
 
     <!--answer button-->
     <string name="button_submit_answers">What\'s my score?</string>
+    <string name="reset_quiz">Reset quiz</string>
 </resources>
