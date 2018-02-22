@@ -1,7 +1,7 @@
 package com.example.android.geoquiz;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.CheckBox;
@@ -192,11 +192,11 @@ public class MainActivity extends AppCompatActivity {
         userAnswerHighestMountain.setText("");
 
         //resets the points
-       score= 0;
-       pointsAswanLocated = 0;
-       pointsMountainAlp = 0;
-       pointsMegacities = 0;
-       pointsEditTextHighestMountain = 0;
+        score = 0;
+        pointsAswanLocated = 0;
+        pointsMountainAlp = 0;
+        pointsMegacities = 0;
+        pointsEditTextHighestMountain = 0;
 
     }
 }

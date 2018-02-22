@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -105,7 +104,6 @@
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonAswanLocated"
-                android:paddingRight="24dp"
                 android:text="@string/kongo" />
 
             <RadioButton
@@ -113,7 +111,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonAswanLocated"
-                android:paddingRight="24dp"
                 android:text="@string/nil" />
 
             <RadioButton
@@ -121,7 +118,6 @@
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonAswanLocated"
-                android:paddingRight="24dp"
                 android:text="@string/kasai" />
 
             <RadioButton
@@ -149,6 +145,7 @@
                 android:id="@+id/cities_germany_berlin"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:paddingEnd="24dp"
                 android:paddingRight="24dp"
                 android:text="@string/berlin" />
 
@@ -156,7 +153,6 @@
                 android:id="@+id/cities_germany_köln"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingRight="24dp"
                 android:text="@string/k_ln" />
         </LinearLayout>
 
@@ -169,6 +165,7 @@
                 android:id="@+id/cities_germany_rotterdam"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:paddingEnd="24dp"
                 android:paddingRight="24dp"
                 android:text="@string/rotterdam" />
 
@@ -198,7 +195,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonsHighestMountainAlp"
-                android:paddingRight="24dp"
                 android:text="@string/mont_blanc" />
 
             <RadioButton
@@ -206,7 +202,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonsHighestMountainAlp"
-                android:paddingRight="24dp"
                 android:text="@string/matterhorn" />
 
             <RadioButton
@@ -214,7 +209,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="radioButtonsHighestMountainAlp"
-                android:paddingRight="24dp"
                 android:text="@string/zugspitze" />
 
             <RadioButton
@@ -235,18 +229,18 @@
                 android:id="@+id/submit_answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
                 android:layout_marginTop="24dp"
                 android:onClick="displayScore"
-                android:text="@string/button_submit_answers"
-                android:layout_alignParentLeft="true"     />
+                android:text="@string/button_submit_answers" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
                 android:layout_marginTop="24dp"
                 android:onClick="resetQuiz"
-                android:text="@string/reset_quiz"
-                android:layout_alignParentRight="true"/>
+                android:text="@string/reset_quiz" />
         </RelativeLayout>
 
 
